@@ -1,0 +1,141 @@
+header {
+  text-transform: uppercase;
+
+  .offer {
+    background: #62583A;
+    font-family: var(--family-primary);
+    height:37px;
+    letter-spacing: 0.01rem;
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #FFFFFF;
+      p {
+        svg {
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+          top: 2px;
+        }
+        position: relative;
+        top: -8px;
+      }
+
+    b {
+      margin-left: 10px;
+      margin-top: 0px;
+    }
+  }
+
+.logoInMobile{
+  display:none;
+}
+.sideNav{
+  display:none;
+}
+.container {
+  display: flex;
+  position: relative;
+  height:104px;
+  font-size: 16px;
+  align-items: center;
+  right: 0;
+  left: 0;
+  top: 35px;
+  bottom: 17%;
+  justify-content: center;
+  
+  .burger-icon{
+    display:none;
+  }
+  .logoInWeb{
+      display: block;
+      li a svg{
+        
+      vertical-align: middle;
+      }
+    }
+    ul {
+      justify-content: space-evenly;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline;
+      list-style: none;
+      letter-spacing: 0.01rem;
+      margin-left: 1rem;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: var(--text-default);
+      .languages{
+        position: relative;
+        border: none;
+        font-size: 16px;
+        font-family: var(--family-primary);
+        color: var(--text-default);
+        text-transform: uppercase;
+      }
+      
+    }
+  }
+}
+
+@media only screen and  (max-width: 991px){
+  header {
+    .logoInMobile{
+      display: flex;
+      justify-content:center;
+      border-bottom: 0.01rem solid var(--text-default);
+      padding-bottom: 14px;
+      margin-top: 14px;
+    }
+    .container{
+  justify-content: space-between;
+
+  ul li.contact{
+    display:none;
+  }
+      .burger-icon{
+        position:relative;
+       display: block;
+       margin-top: 20px;
+       margin-left: 20px;
+       color:  var(--text-default);
+       border:none;
+       font-size: 17px;
+       background-color: transparent;
+     }
+
+      .logoInWeb{
+        display: none;
+      }
+      .top-nav li{
+        display: none;
+      }
+      
+    }
+    .openMenu{
+      font-family: var(--family-primary);
+      flex-direction: column;
+      position: relative;
+      display: block;
+      animation: 1s ease-out 0s 1;
+    }
+    .openMenu li  {
+     list-style: none;
+     padding-top: 12px;
+    }
+    .openMenu li a {
+      text-decoration: none;
+      color: var(--text-default);
+    }
+  }
+
+
+}

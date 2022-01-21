@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --family-primary: 'Open Sans', sans-serif;
+    --family-secondary: 'Cormorant Garamond', serif;
+    --weight-100: 100;
+    --weight-200: 200;
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+    --weight-900: 900;
+    --black: #000;
+    --white: #fff;
+    --text-default: #62583A;
+    --text-light: #878787;
+    --body-bg: #FFFDF8;
+    --bg-secondary:#F9F6EF;
+    --app-theme-primary:#62583A;
+    --app-theme-secondary:#1CA39A;
+    --border-default: #F9F6EF;
+    --border-secondary: #EFECE3;
+  }
+  
+  
+    body{
+      margin: 0%;
+      padding: 0%;
+      width: 100%;
+      height: 100%;
+  }
+  

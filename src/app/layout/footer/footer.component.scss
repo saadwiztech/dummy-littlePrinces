@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  font-family: var(--family-primary);
+  .content {
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+
+    ul li {
+      list-style: none;
+      margin-bottom: 23px;
+
+      a {
+        text-decoration: none;
+        color: var(--text-default);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+    }
+
+    .contact {
+      .logo {
+        margin-bottom: 38px
+      }
+
+      ul li {
+
+        a {
+          text-transform: lowercase;
+        }
+
+        svg {
+          padding-right: 0.78rem;
+          vertical-align: middle;
+          margin-top: 0.5rem;
+        }
+      }
+
+    }
+
+    .social-media {
+      display: flex;
+      width: 165px;
+
+      div {
+        margin-right: 22px;
+
+        a {
+          padding: 11px 6px 8px 6px; 
+          background-color: var(--text-default);
+        }
+      }
+    }
+    .find-us{
+
+        color: var(--text-default);
+      font-size: 16px;
+        .excellent{
+            font-weight:600;
+            span{
+            margin-left: 22px;
+            }
+            span a {
+                padding: 4px 2px 3px 3px;
+                background-color: #55B37F;
+                margin-right: 3px;
+            }
+        }
+        .reviews{
+            font-weight:600;
+            text-align: center;
+        }
+    }
+  }
+  .flags ul{
+    display:flex;
+    justify-content:center;
+    border-top: 0.1px solid var(--text-default);
+    li{
+      list-style: none;
+    }
+    .icon-flag{
+      width: 40px;
+      height: 26.04px;
+      margin-top:15.4px;
+      margin-right: 24px;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 991px){
+
+  .container{
+  
+    position: relative;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  .content{
+    display: flex;
+    flex-direction: column;
+    .contact{
+      ul li a {
+        font-weight: 400;
+
+        svg {
+          padding-right: 0.3rem;
+          vertical-align:  text-bottom;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+    .find-us{
+  
+      .reviews{
+        font-weight:600;
+        text-align: left;
+    }
+      }
+  }
+  .flags ul{
+    justify-content: flex-start;
+  }
+  }
+
+
+}
