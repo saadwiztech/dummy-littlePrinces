@@ -6,7 +6,6 @@
   align-content:center;
   left: 0;
   bottom: 0;
-  position: absolute;
    .container {
     max-width: 1530px;
     width: 100%;
@@ -18,7 +17,7 @@
        width: 100%;
        display: flex;
        justify-content: space-around;
-       border-bottom: 0.1px solid var(--text-default);
+       border-bottom: 0.1px solid #F9F6EF;
    
        ul li {
          list-style: none;
