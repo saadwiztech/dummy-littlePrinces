@@ -9,10 +9,13 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
   check : boolean = false;
+  lang :boolean = false;
   
   ngOnInit() {
   }
-
+  toggleLang(){
+    this.lang = !this.lang;
+  }
   toggle() {
     this.check = !this.check;
   }
