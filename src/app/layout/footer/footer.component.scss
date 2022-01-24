@@ -4,10 +4,10 @@
   display: flex;
   justify-content:center;
   align-content:center;
-
+  margin-top:80%;
   left: 0;
   bottom: 0;
-  position: fixed;
+  position: relative;
    .container {
     max-width: 1530px;
     width: 100%;
@@ -116,40 +116,43 @@
 
 @media only screen and (max-width: 991px){
 
-  .container{
-  
-    position: relative;
-    left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: left;
-  .content{
-    display: flex;
-    flex-direction: column;
-    .contact{
-      ul li a {
-        font-weight: 400;
+  .footer{
 
-        svg {
-          padding-right: 0.3rem;
-          vertical-align:  text-bottom;
-          margin-top: 0.5rem;
+    position: relative;
+    .container{
+    
+      left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    .content{
+      display: flex;
+      flex-direction: column;
+      .contact{
+        ul li a {
+          font-weight: 400;
+  
+          svg {
+            padding-right: 0.3rem;
+            vertical-align:  text-bottom;
+            margin-top: 0.5rem;
+          }
         }
       }
-    }
-    .find-us{
-  
-      .reviews{
-        font-weight:600;
-        text-align: left !important;
-    }
+      .find-us{
+    
+        .reviews{
+          font-weight:600;
+          text-align: left !important;
       }
-  }
-  .flags{
-    width: 100%;
-    display: flex;
-  }
-  }
+        }
+    }
+    .flags{
+      width: 100%;
+      display: flex;
+    }
+    }
 
+  }  
 
 }
