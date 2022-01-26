@@ -111,7 +111,12 @@ header {
       text-decoration: none;
       color: var(--text-default);
       
-
+      
+        .right-icons{
+          width: 54px;
+          height: 54px;
+        
+      }
      #search:hover, #account:hover, #cart:hover{
         fill: #FFFDF8;
       }
@@ -145,6 +150,13 @@ header {
 
   ul li.contact{
     display:none;
+  }
+  ul li a {
+    .right-icons{
+      width: 40px;
+      height: 40px;
+    
+  }
   }
       .burger-icon{
         position:relative;
