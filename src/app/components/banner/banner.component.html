@@ -1,20 +1,183 @@
 <div class="container">
 
-<div class="home-banner">
-    
-    <img src="../../../assets/images/home-banner.jpg" alt="home-banner">
-</div>
+  <div class="home-banner">
 
-<div class="booklist-container">
+    <img src="../../../assets/images/home-banner.jpg" alt="home-banner">
+  </div>
+
+  <div class="booklist-container">
 
     <div class="booklist">
-        <div class="card">
-            <div class="mainImage">
+      <div class="main-card">
 
-                <img src="../../../assets/images/photo-book.png" alt="photo-book">
-            </div>
+
+
+        <div class="mainImage">
+
+          <img src="../../../assets/images/photo-book.png" alt="photo-book">
         </div>
+        <div class="details">
+          <div class="content">
+            <div class="carosal">
+
+              <div class="card">
+                <p-carousel [value]="images" [numVisible]="2" [numScroll]="2" [circular]="false" [autoplayInterval]="0"
+                  [responsiveOptions]="responsiveOptions">
+                  <ng-template let-image pTemplate="item">
+                    <div class="item card">
+                      <img src="{{image.picture}}" class="card-img-top carosal-img" alt="...">
+
+                    </div>
+                  </ng-template>
+                </p-carousel>
+              </div>
+            </div>
+
+
+            <div class="details-container">
+
+              <div class="cover-heading">
+                Hard Cover Edition
+              </div>
+              <div class="title">
+                The Little Prince
+              </div>
+              <div class="Antoine">
+                Antoine de Saint-Exupéry
+              </div>
+              <div class="description">
+                Size of 8.5x11 inches (21.6 x 27.9cm)
+              </div>
+            </div>
+          </div>
+
+          <div class="lower-section">
+            <div class="price">
+              € 39.00
+            </div>
+            <button class="btn">
+              discover
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main-card">
+
+
+
+        <div class="mainImage">
+
+          <img src="../../../assets/images/photo-book.png" alt="photo-book">
+        </div>
+        <div class="details">
+          <div class="content">
+            <div class="carosal">
+
+              <div class="card">
+                <p-carousel [value]="images" [numVisible]="2" [numScroll]="2" [circular]="false" [autoplayInterval]="0"
+                  [responsiveOptions]="responsiveOptions">
+                  <ng-template let-image pTemplate="item">
+                    <div class="item card">
+                      <img src="{{image.picture}}" class="card-img-top carosal-img" alt="...">
+
+                    </div>
+                  </ng-template>
+                </p-carousel>
+              </div>
+            </div>
+
+
+            <div class="details-container">
+
+              <div class="cover-heading">
+                Hard Cover Edition with Audio
+              </div>
+              <div class="title">
+                The Little Prince
+              </div>
+              <div class="Antoine">
+                Antoine de Saint-Exupéry
+              </div>
+              <div class="description">
+                Actors bring to life the Rose, the Fox,
+                the Snake and other characters
+              </div>
+              <div class="description">
+                Size of 8.5x11 inches (21.6 x 27.9cm)
+              </div>
+            </div>
+          </div>
+
+          <div class="lower-section">
+            <div class="price">
+              € 39.00
+            </div>
+            <button class="btn">
+              discover
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main-card">
+
+
+
+        <div class="mainImage">
+
+          <img src="../../../assets/images/photo-book.png" alt="photo-book">
+        </div>
+        <div class="details">
+          <div class="content">
+            <div class="carosal">
+
+              <div class="card">
+                <p-carousel [value]="images" [numVisible]="2" [numScroll]="2" [circular]="false" [autoplayInterval]="0"
+                  [responsiveOptions]="responsiveOptions">
+                  <ng-template let-image pTemplate="item">
+                    <div class="item card">
+                      <img src="{{image.picture}}" class="card-img-top carosal-img" alt="...">
+
+                    </div>
+                  </ng-template>
+                </p-carousel>
+              </div>
+            </div>
+
+
+            <div class="details-container">
+
+              <div class="cover-heading">
+                Deluxe Coffee Table & Gift Edition
+              </div>
+              <div class="title">
+                The Little Prince
+              </div>
+              <div class="Antoine">
+                Antoine de Saint-Exupéry
+              </div>
+              <div class="description">
+
+                Actors bring to life the Rose, the Fox,
+                the Snake and other characters
+              </div>
+
+              <div class="description">
+                Size of 8.5x11 inches (21.6 x 27.9cm)
+              </div>
+            </div>
+          </div>
+
+          <div class="lower-section">
+            <div class="price">
+              € 39.00
+            </div>
+            <button class="btn">
+              discover
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-    
+  </div>
+
 </div>

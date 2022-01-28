@@ -1,34 +1,114 @@
 .container {
-    position: relative;
-    z-index: 1;
-    .home-banner{
+  position: relative;
+  z-index: 1;
+  font-family: var(--family-primary);
+  .home-banner {
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: auto;
     position: absolute;
     z-index: 1;
-}
-.booklist-container{
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    
-    .booklist{
-        flex-wrap: wrap;
-        max-width:1530px;
-       display: flex;
-       width: 100%;
-       position: relative;
-       justify-content: space-evenly;
-       margin-top: 345px;
-       z-index: 3;
-        .card{
-            height: 1020px;
-            width: 490px;
-            background-color:#FFFDF8;
-            display: flex;
-            justify-content: center;
-        }
+    img {
+      width: 100%;
     }
-}
+  }
+  .booklist-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
+    .booklist {
+      flex-wrap: wrap;
+      max-width: 1530px;
+      display: flex;
+      width: 100%;
+      position: relative;
+      justify-content: space-between;
+      margin-top: 345px;
+      z-index: 3;
+      .main-card {
+        height: 1020px;
+        width: 490px;
+        background-color: #fffdf8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #62583a;
+        transition: 0.4s ease-in-out;
+
+        .details {
+          width: inherit;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: inherit;
+            .carosal {
+              width: 80%;
+              .carosal-img {
+                max-width: 140px;
+              }
+            }
+            .details-container {
+              width: 80%;
+
+              .cover-heading {
+                font-weight: 600;
+                font-size: 32px;
+                // line-height: 44px;
+              }
+              .title {
+                font-family: var(--family-secondary);
+                font-weight: 500;
+                font-size: 36px;
+                // line-height: 46px;
+              }
+              .Antoine {
+                font-size: 16px;
+                // line-height: 32px;
+              }
+              .description {
+                font-size: 10px;
+                // line-height: 26px;
+              }
+            }
+          }
+          .lower-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-family: var(--family-primary);
+            .price {
+              width: 80%;
+              padding-bottom: 20px;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 26px;
+            }
+            .btn {
+              width: 80%;
+              border: none;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              background: #1ca39a;
+              text-align: center;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .main-card:hover {
+        background: #f9f6ef;
+      }
+    }
+  }
 }

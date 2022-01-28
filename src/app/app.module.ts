@@ -7,6 +7,10 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
+import { AccordionModule } from 'primeng/accordion';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,17 @@ import { BookDetailsComponent } from './components/book-details/book-details.com
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    BookDetailsComponent
+    BookDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AccordionModule,
+    CarouselModule,
+    ButtonModule,
+    ToastModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

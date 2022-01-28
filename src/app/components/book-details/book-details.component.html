@@ -1,1 +1,62 @@
-<p>book-details works!</p>
+<div class="container">
+  <div class="content">
+
+    <div class="upper-section">
+      <div class="book">
+        <img src="../../../assets/images/Front Cover Book Version 2 (3) 4.svg" alt="front cover" />
+      </div>
+      <div class="cart">
+        <h2 class="edition">
+          Deluxe Coffee Table & Gift Edition
+        </h2>
+        <h2 class="title">
+          The Little Prince
+        </h2>
+        <h2 class="sub-heading">
+          Antoine de Saint-Exupéry
+        </h2>
+        <p class="description">
+          Natural Linen Fabric, Stitched binding, Archival quality paper
+        </p>
+
+        <p class="description">
+          Size of 9.5x12.7 inches (24.1 x 32.3cm)
+        </p>
+        <p class="description">
+          Hard Cover with a textured, woven natural fabric ‘Pepper Linen’
+          Archival quality paper, golden paper
+          Stitched binding/spiral bound
+        </p>
+
+        <div class="quantity-price">
+          <div class="quantity">
+            <div>
+              Quantity:
+            </div>
+            <div style="width: 30px; border-right: 1px solid black;">
+              {{quantity}}
+            </div>
+            <div class="buttons">
+              <button class="btn" (click)="increment()">
+                <img src="../../../assets/images/increment.svg" alt="increment">
+              </button>
+
+              <button class="btn" (click)="decrement()">
+                <img src="../../../assets/images/decrement.svg" alt="decrement">
+              </button>
+            </div>
+          </div>
+          <div class="price">
+            € 69.00
+          </div>
+        </div>
+        <button class="basket">
+          add to basket
+        </button>
+      </div>
+    </div>
+    <div class="carousal">
+
+    </div>
+  </div>
+</div>
