@@ -1,62 +1,214 @@
 <div class="container">
-  <div class="content">
+  <div class="main">
 
-    <div class="upper-section">
-      <div class="book">
-        <img src="../../../assets/images/Front Cover Book Version 2 (3) 4.svg" alt="front cover" />
-      </div>
-      <div class="cart">
-        <h2 class="edition">
-          Deluxe Coffee Table & Gift Edition
-        </h2>
-        <h2 class="title">
-          The Little Prince
-        </h2>
-        <h2 class="sub-heading">
-          Antoine de Saint-Exupéry
-        </h2>
-        <p class="description">
-          Natural Linen Fabric, Stitched binding, Archival quality paper
-        </p>
-
-        <p class="description">
-          Size of 9.5x12.7 inches (24.1 x 32.3cm)
-        </p>
-        <p class="description">
-          Hard Cover with a textured, woven natural fabric ‘Pepper Linen’
-          Archival quality paper, golden paper
-          Stitched binding/spiral bound
-        </p>
-
-        <div class="quantity-price">
-          <div class="quantity">
-            <div>
-              Quantity:
+    <div class="content">
+  
+      <div class="upper-section">
+        
+          <img class="book" src="../../../assets/images/Front Cover Book Version 2 (3) 4.svg" alt="front cover" />
+        
+        <div class="cart">
+          <h2 class="edition">
+            Deluxe Coffee Table & Gift Edition
+          </h2>
+          <h2 class="title">
+            The Little Prince
+          </h2>
+          <h2 class="sub-heading">
+            Antoine de Saint-Exupéry
+          </h2>
+          <p class="description">
+            Natural Linen Fabric, Stitched binding, Archival quality paper
+          </p>
+  
+          <p class="description">
+            Size of 9.5x12.7 inches (24.1 x 32.3cm)
+          </p>
+          <p class="description">
+            Hard Cover with a textured, woven natural fabric ‘Pepper Linen’
+            Archival quality paper, golden paper
+            Stitched binding/spiral bound
+          </p>
+  
+          <div class="quantity-price">
+            <div class="quantity">
+              <div>
+                Quantity:
+              </div>
+              <div style="width: 30px; border-right: 1px solid black;">
+                {{quantity}}
+              </div>
+              <div class="buttons">
+                <button class="btn" (click)="increment()">
+                  <img src="../../../assets/images/increment.svg" alt="increment">
+                </button>
+  
+                <button class="btn" (click)="decrement()">
+                  <img src="../../../assets/images/decrement.svg" alt="decrement">
+                </button>
+              </div>
             </div>
-            <div style="width: 30px; border-right: 1px solid black;">
-              {{quantity}}
-            </div>
-            <div class="buttons">
-              <button class="btn" (click)="increment()">
-                <img src="../../../assets/images/increment.svg" alt="increment">
-              </button>
-
-              <button class="btn" (click)="decrement()">
-                <img src="../../../assets/images/decrement.svg" alt="decrement">
-              </button>
+            <div class="price">
+              € 69.00
             </div>
           </div>
-          <div class="price">
-            € 69.00
+          <button class="basket">
+            add to basket
+          </button>
+        </div>
+      </div>
+      <div class="carousal">
+        <div class="card">
+          <p-carousel [value]="images" [numVisible]="5" [numScroll]="5" [circular]="false" [autoplayInterval]="0"
+            [responsiveOptions]="responsiveOptions">
+            <ng-template let-image pTemplate="item">
+              <div class="item card">
+                <img src="{{image.picture}}" class="card-img-top carosal-img" alt="...">
+              </div>
+            </ng-template>
+          </p-carousel>
+        </div>
+      </div>
+      <div class="content-detail">
+        <h2 class="title">
+          ‘The important things in life you cannot see with your eyes, only with your heart’
+        </h2>
+        <p class="description">
+          The Little Prince has captured the hearts of readers around the world since he first appeared in 1943 because it is a universal and eternal metaphor on the importance of innocence and love. The novel follows a young prince as he travels across space, visiting numerous planets, including Earth, and explores themes of loneliness, friendship, love, and grief. The Little Prince, despite its appearance as a children's novel, provides insights about life, adulthood, and human nature. Here are some of the timeless lessons learned in the journey:
+        </p>
+        <ul>
+        <li>“It is only with the heart that one can see rightly; what is essential is invisible to the eye”</li>
+        <li>“It is the time you spent on your rose that makes your rose so important”.</li>
+        <li>Relationships make life worth living.</li>
+        <li>Look after the planet.</li>
+        <li>Don't evaluate others based on their words, but rather on their actions.</li>
+        <li>Don't become too attached to numbers.</li>
+        <li>Remember to look up at the stars.</li>
+        </ul>
+        <p class="description">
+          The Little Prince became Saint-Exupéry's most successful work, selling an estimated 140 million copies worldwide, which makes it one of the best-selling and most translated books ever published. It has been translated into 301 languages and dialects.
+        </p>
+        <p class="description">
+          
+This <b> Deluxe Hard Cover Edition  </b>comes with new creative art by renowned artist Penny Weber to further amplify the emotions experienced in the Little Prince’s journey. Made with a premium textured woven linen natural fabric, archival quality golden paper and stitched binding.
+        </p>
+      </div>
+        <div class="details-toggle">
+          <div >
+            <h4 class="head">
+              PRODUCTION DETAILS
+            </h4>
+              <div class="show">
+                <p>Deluxe Hard Cover Edition</p>
+                <p>Textured, woven Linen natural fabric </p>
+                <p>Archival quality golden paper</p>
+                <p>Stitched binding</p>
+                <p>120 pages</p>
+                <p>42 colour full page illustrations</p>
+                <p> Printed endpapers</p>
+                <p>9.5˝ x 12.7˝ (24.1 x 32.3 cm)</p>
+              </div>
+          </div>
+          <div class="toggle">
+            <h1> <img src="../../../assets/images/minimize.svg" alt="minimize"></h1>
           </div>
         </div>
-        <button class="basket">
-          add to basket
-        </button>
-      </div>
-    </div>
-    <div class="carousal">
 
+        <div class="details-toggle">
+          <div >
+            <h4 class="head">
+              Why is this booking using New Creative Art?
+            </h4>
+              <div class="show">
+              <p>The Little Prince is an eternal metaphor on the importance of innocence and love. Through more detailed facial expressions and detailing, illustrations in this book amplify the meaning and message of the text. A unique rhythm between pictures and words emerges.</p>
+              <p>Penny Weber is a renowned New York based artist specialized in painting people. Her beautiful illustrations and range of facial expressions fill the visual story with emotions and positive sentiments – and offer a new take on the Little Prince.</p>
+              </div>
+          </div>
+          <div class="toggle">
+            <h1> <img src="../../../assets/images/minimize.svg" alt="minimize"></h1>
+          </div>
+        </div>
+        
+        <div class="details-toggle">
+          <div >
+            <h4 class="head">
+              Offer the Little Prince as a Gift to your Loved Ones with this Deluxe Hard Cover Edition
+            </h4>
+              <div class="show">
+              <p>The Little Prince takes us on a journey into a poetic and marvelous universe with a philosophical dimension, which give us real life lessons, teaching love, patience and courage. </p>
+              <p>You have probably already discovered this amazing novel in your youth. It is now time to share this pleasure and introduce it to your children, family or friends. It is a real moment of exchange and sharing with your little ones because they will ask themselves many questions.</p>
+              <p>This Deluxe Hard cover Edition makes for an amazing, premium gift. The binding is in a striking burgundy color. It is made with a high quality textured woven Linen natural fabric, archival quality golden paper and stitched binding. It comes with a beautiful gift set. </p>
+              <p>It will look great for years to come on coffee tables or book shelves.</p>
+              </div>
+          </div>
+          <div class="toggle">
+            <h1> <img src="../../../assets/images/minimize.svg" alt="minimize"></h1>
+          </div>
+        </div>
+        <div class="details-toggle">
+          <div >
+            <h4 class="head">
+              ‘THERE IS ONE PROBLEM AND ONLY ONE IN THE WORLD: TO REVIVE IN PEOPLE SOME SENSE
+               OF SPIRITUAL MEANING’
+            </h4>
+              <div class="show">
+              <p>During World War II, after Germany's invasion of France forced him to abandon aviation and flee to New York, Saint-Exupéry began writing The Little Prince. Saint-Exupéry was greatly impacted by having to leave his birthplace and no longer being able to fly planes. He also had tortured thoughts of the European conflict. The novel's nostalgia for childhood reflects both Saint-homesick Exupéry's yearning to return to France and his wish to return to a peaceful era. This wartime stress undoubtedly contributed to the sense of urgency in Saint-Exupéry’s message of love and compassion. </p>
+              <p>The Little Prince is both a celebration of childish innocence and a condemnation of humanity's spiritual deterioration, as Saint-Exupéry saw it. In 1943, he wrote, “We could have ascended the staircase; instead we chose to descend it. Spiritual decay is terrible. . . There is one problem and only one in the world: to revive in people some sense of spiritual meaning.”</p>
+              <p>
+                The Little Prince seeks to resurrect a sense of spirituality in the world by glorifying a viewpoint free of the dreary confines of adulthood </p>
+              <p>Saint-Exupéry, like Voltaire, encourages readers to actively participate in the reading process by utilizing their imaginations to give greater meaning to deceptively simple language and poetry. The Little Prince seeks to be a universal and eternal metaphor on the importance of innocence and love.</p>
+              </div>
+          </div>
+          <div class="toggle">
+            <h1> <img src="../../../assets/images/minimize.svg" alt="minimize"></h1>
+          </div>
+        </div>
+
+        <div class="details-toggle">
+          <div >
+            <h4 class="head">
+              REVIEWS POWERED BY <img src="../../../assets/images/greenstar.svg" alt="greenstar"> <b>Trustpilot</b>
+            </h4>
+              <div class="show">
+                
+
+                  <p> <img src="../../../assets/images/rating.svg"/> Average Score for 85 Review(s)</p>
+                
+                <div>
+                  <p> “I very much enjoyed this book” </p>
+                  <p> <img src="../../../assets/images/rating.svg"/> Review by Oscar on 4th November 2021</p>
+                </div>
+
+                <div>
+                  <p> “A special book, thank you so much” </p>
+                  <p> <img src="../../../assets/images/rating.svg"/> Review by Thomas on 6th October 2021</p>
+                </div>
+                <div>
+                  <p> “My 10-year-old son received this beautiful manuscript as a gift for Christmas. At first…he cried because he wanted a car toy!!! But after a few days he really dove into the story and is now totally into it! He loves the illustrations and is asking so many questions about the meaning of this book. So well done to all of you for a beautifully crafted product. Certainly one of the nicest gifts I have ever offered” </p>
+                  <p> <img src="../../../assets/images/rating.svg"/> Review by Joe on 3rd September 2021</p>
+                </div>
+                
+                <div>
+                  <p>“I paid more than I budgeted but this is much nicer indeed” </p>
+                  <p> <img src="../../../assets/images/rating.svg"/> Review by Ingrid on 11th August 2021</p>
+                </div>
+                <p class="show-more"> <a href="#"> show more </a></p>
+              </div>
+          </div>
+          <div class="toggle">
+            <h1> <img src="../../../assets/images/minimize.svg" alt="minimize"></h1>
+          </div>
+        </div>
+        
+        <div class="search-section">
+        
+          <p>Get information about new products, book selections, secret promo codes.</p>
+          <div>
+
+            <input type="text" name="email-search" id="email-search">
+            <button>submit</button>
+          </div>
+      </div>
     </div>
   </div>
 </div>

@@ -123,6 +123,17 @@ header {
     }
   }
 }
+@media only screen and (min-width: 2100px) {
+  .container {
+    justify-content: center;
+    max-width: 1730px;
+    width: 100%;
+    ul li a {
+      font-size: 25px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1149px) {
   .container {
     justify-content: center;

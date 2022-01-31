@@ -58,8 +58,8 @@
       <li> <a href="#">musical books</a> </li>
       <li> <a href="#">testimonials</a> </li>
     </ul>
-    <ul class="logoInWeb">
-      <li>
+    <div class="logoInWeb">
+      <h4>
 
         <a href="#">
           <svg width="66" height="71" viewBox="0 0 66 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,36 +81,50 @@
             </defs>
           </svg>
         </a>
-      </li>
-    </ul>
+      </h4>
+    </div>
     <ul>
       <li class="contact"><a href="#">contact</a></li>
-      <li class='dropdown ' (click)="toggleLang()"><a href="#" > Language <i class="fa fa-caret-down"></i>
-      </a> 
-      <!-- sub menu links-->
+      <li class='dropdown ' (click)="toggleLang()"><a href="#"> Language <i class="fa fa-caret-down"></i>
+        </a>
+        <!-- sub menu links-->
         <table class="submenu" [class.lang]="lang">
-          
-          <tr class="submenue-item"> <td> <a href="#"><img src="../../../assets/images/flag-6.jpg" alt="English"> English</a></td></tr>
-          <tr class="submenue-item"> <td> <a href="#"><img src="../../../assets/images/flag-5.jpg" alt="German"> german</a></td></tr>
-          <tr class="submenue-item"> <td> <a href="#"><img src="../../../assets/images/flag-4.jpg" alt="spanish"> spanish</a></td></tr>
-          <tr class="submenue-item"> <td> <a href="#"><img src="../../../assets/images/flag-3.jpg" alt="Italian"> Italian</a></td></tr>
-          <tr class="submenue-item"> <td> <a href="#"><img src="../../../assets/images/flag-2.jpg" alt="dutch"> dutch</a></td></tr>
-          <tr class="submenue-item swedish"> <td> <a href="#"><img src="../../../assets/images/flag-1.jpg" alt="swedish"> swedish</a></td></tr>
+
+          <tr class="submenue-item">
+            <td> <a href="#"><img src="../../../assets/images/flag-6.jpg" alt="English"> English</a></td>
+          </tr>
+          <tr class="submenue-item">
+            <td> <a href="#"><img src="../../../assets/images/flag-5.jpg" alt="German"> german</a></td>
+          </tr>
+          <tr class="submenue-item">
+            <td> <a href="#"><img src="../../../assets/images/flag-4.jpg" alt="spanish"> spanish</a></td>
+          </tr>
+          <tr class="submenue-item">
+            <td> <a href="#"><img src="../../../assets/images/flag-3.jpg" alt="Italian"> Italian</a></td>
+          </tr>
+          <tr class="submenue-item">
+            <td> <a href="#"><img src="../../../assets/images/flag-2.jpg" alt="dutch"> dutch</a></td>
+          </tr>
+          <tr class="submenue-item swedish">
+            <td> <a href="#"><img src="../../../assets/images/flag-1.jpg" alt="swedish"> swedish</a></td>
+          </tr>
 
 
         </table>
       </li>
-        <!-- fill="#F9F6EE" -->
-      <li><a href="#" class='search'><svg class="right-icons"  viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- fill="#F9F6EE" -->
+      <li><a href="#" class='search'><svg class="right-icons" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M47.137 10.2078C55.9823 20.5368 56.8522 40.4228 46.3589 49.1701C35.8656 57.9175 12.7245 54.0034 3.87546 43.6748C-4.97358 33.3461 2.69725 13.6352 13.1869 4.88748C23.6766 -3.86026 38.2879 -0.120808 47.137 10.2078Z"
-              fill="#F9F6EE" id="search"/>
+              fill="#F9F6EE" id="search" />
             <path
               d="M34.1858 32.8873C36.0916 30.9273 37.176 28.2909 37.176 25.5455C37.176 19.7309 32.426 15 26.588 15C20.75 15 16 19.7309 16 25.5455C16 31.36 20.75 36.0909 26.588 36.0909C28.9575 36.0909 31.2431 35.3018 33.0978 33.8582L37.7383 38.7709C37.8843 38.9236 38.0778 39 38.2713 39C38.4502 39 38.6291 38.9345 38.7715 38.8036C39.0636 38.5273 39.0782 38.0691 38.8007 37.7745L34.1858 32.8873ZM32.6743 32.32C30.9984 33.8145 28.837 34.6364 26.588 34.6364C21.5532 34.6364 17.4604 30.56 17.4604 25.5455C17.4604 20.5309 21.5532 16.4545 26.588 16.4545C31.6228 16.4545 35.7156 20.5309 35.7156 25.5455C35.7156 28.1273 34.6057 30.5964 32.6743 32.32Z"
               fill="#62583A" />
           </svg>
         </a></li>
-      <li><a href="#" class='account'><svg  class="right-icons" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <li><a href="#" class='account'><svg class="right-icons" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M47.137 10.2078C55.9823 20.5368 56.8522 40.4228 46.3589 49.1701C35.8656 57.9175 12.7245 54.0034 3.87546 43.6748C-4.97358 33.3461 2.69725 13.6352 13.1869 4.88748C23.6766 -3.86026 38.2879 -0.120808 47.137 10.2078Z"
               fill="#F9F6EE" id='account' />
@@ -122,10 +136,11 @@
               fill="#62583A" />
           </svg>
         </a></li>
-      <li><a href="#" class="cart"><svg class="right-icons"  viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <li><a href="#" class="cart"><svg class="right-icons" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M47.137 10.2078C55.9823 20.5368 56.8522 40.4228 46.3589 49.1701C35.8656 57.9175 12.7245 54.0034 3.87546 43.6748C-4.97358 33.3461 2.69725 13.6352 13.1869 4.88748C23.6766 -3.86026 38.2879 -0.120808 47.137 10.2078Z"
-              fill="#F9F6EE" id="cart"/>
+              fill="#F9F6EE" id="cart" />
             <path
               d="M16.4261 37.746L17.8117 22.2712C17.8413 21.9276 18.1333 21.6675 18.4748 21.6675H21.3251C21.3647 19.0859 23.4925 17 26.1053 17C28.7181 17 30.846 19.0859 30.8856 21.6675H33.7359C34.0823 21.6675 34.3693 21.9276 34.399 22.2712L35.7846 37.746C35.7846 37.7656 35.7896 37.7853 35.7896 37.8049C35.7896 39.5669 34.1615 41 32.1574 41H20.0533C18.0492 41 16.4211 39.5669 16.4211 37.8049C16.4211 37.7853 16.4211 37.7656 16.4261 37.746ZM26.1053 18.3252C24.2299 18.3252 22.7008 19.8172 22.6612 21.6675H29.5495C29.5099 19.8172 27.9808 18.3252 26.1053 18.3252ZM20.0533 39.6748H32.1574C33.4143 39.6748 34.4337 38.8503 34.4535 37.8344L33.1273 22.9975H30.8905V25.0098C30.8905 25.3779 30.5936 25.6724 30.2225 25.6724C29.8514 25.6724 29.5544 25.3779 29.5544 25.0098V22.9975H22.6612V25.0098C22.6612 25.3779 22.3643 25.6724 21.9931 25.6724C21.622 25.6724 21.3251 25.3779 21.3251 25.0098V22.9975H19.0884L17.7572 37.8344C17.777 38.8503 18.8014 39.6748 20.0533 39.6748Z"
               fill="#62583A" />
