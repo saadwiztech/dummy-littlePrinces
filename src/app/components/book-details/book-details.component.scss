@@ -6,6 +6,7 @@
   font-family: var(--family-primary);
   position: relative;
   .main {
+    padding-bottom: 13vh;
     max-width: 1530px;
     width: 100%;
     background: #f9f6ef;
@@ -164,15 +165,106 @@
       .search-section {
         background: #fffdf8;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        > * {
+          display: flex;
+          width: 45%;
+        }
         #email-search {
           max-width: 361px;
           width: 100%;
           max-height: 50px;
           height: 100%;
+
           background: #f9f6ef;
           border: 1px solid #efece3;
+          // padding: 13px 164px 13px 30px;
           box-sizing: border-box;
+        }
+        ::placeholder {
+          padding-left: 2vw;
+        }
+        button {
+          max-width: 230px;
+          width: 100%;
+          max-height: 50px;
+          height: 100%;
+          border: none;
+          text-transform: uppercase;
+          background: #1ca39a;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .carousal {
+    display: none;
+  }
+  .upper-section {
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+    max-width: 1270px;
+    width: 100%;
+    padding-bottom: 48px;
+    .book {
+      max-width: 620px;
+      max-height: 482px;
+      width: 100%;
+      height: 100%;
+    }
+    .cart {
+      max-width: 620px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .basket {
+        font-size: 16px;
+        text-transform: uppercase;
+        max-width: 620px;
+        width: 100%;
+        background: #1ca39a;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        color: #ffffff;
+        margin-top: 30px;
+      }
+      .edition {
+        font-weight: 600;
+        font-size: 32px;
+        margin-top: 3vh;
+        line-height: 0px;
+      }
+      .quantity-price {
+        display: flex;
+        justify-content: space-between;
+        max-width: 506px;
+        width: 100%;
+        .quantity {
+          max-width: 230px;
+          width: 100%;
+          border: 1px solid #62583a;
+          display: flex;
+          justify-content: space-around;
+          padding-top: 10px;
+          padding-bottom: 9px;
+          .buttons {
+            display: flex;
+            flex-direction: column;
+            .btn {
+              border: none;
+              background-color: transparent;
+            }
+          }
+        }
+        .price {
+          font-size: 32px;
+          font-weight: 700;
         }
       }
     }

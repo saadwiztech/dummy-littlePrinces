@@ -11,7 +11,7 @@ export class BannerComponent implements OnInit {
   constructor() {
     this.responsiveOptions = [
       {
-        breakpoint: '991px',
+        breakpoint: '1482px',
         numVisible: 1,
         numScroll: 1,
       },

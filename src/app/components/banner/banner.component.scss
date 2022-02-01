@@ -112,3 +112,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 1485px) {
+  .container {
+    .booklist-container {
+      .booklist {
+        flex-wrap: nowrap;
+        display: flex;
+        width: 100%;
+        .main-card {
+          height: 1020px;
+          width: 370px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .container {
+    display: none;
+  }
+}
